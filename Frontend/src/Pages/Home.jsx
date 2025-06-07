@@ -5,6 +5,11 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
+function orderClick(){
+    const loginCard = document.getElementById('loginCard');
+    loginCard.scrollIntoView();
+}
+
 function Home(){
     return(
         <>
@@ -12,8 +17,8 @@ function Home(){
                 <h1 style={{marginLeft: '150px', marginRight: '350px', fontWeight: '500'}}>FOOD DELIVERY</h1>
                 <section id = "navigationItems">
                     <h4><a href = "">Home</a></h4>
-                    <h4><a href = "">About</a></h4>
-                    <h4><a href = "">Contact</a></h4>
+                    <h4><a href = "#aboutSection">About</a></h4>
+                    <h4><a href = "#footer">Contact</a></h4>
                     <h4><a href = "">Map</a></h4>
                     <h4 style={{marginRight: '100px'}}><a href = "">Admin</a></h4>
                 </section>  
@@ -29,11 +34,11 @@ function Home(){
                 <img src={image} alt="Image" style={{width: '300px', height: 'auto', marginLeft: '250px', marginTop: '50px'}}/>
             </section>
 
-            <button id="order">
+            <button id="order" onClick={orderClick}>
                 ORDER MORE
             </button>
 
-            <button id="menu">
+            <button id="menu" onClick={orderClick}>
                 SEE MENU
             </button>
 
