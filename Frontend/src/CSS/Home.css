@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +10,8 @@ body {
 }
 
 #navigationBar {
+    position: sticky;
+    top: 0;
     margin-top: 25px;
     display: flex;
     color: white;
@@ -16,6 +22,7 @@ body {
 #navigationItems{
     display: flex;
     gap: 60px;
+    align-items: center;
 }
 
 #navigationBar a{
@@ -51,6 +58,12 @@ body {
     color: #ff9b24;
 }
 
+#order:hover{
+    cursor:pointer;
+    border: #007a41;
+    background: #007a41;
+}
+
 #menu{
     margin-left: 20px;
     padding: 24px 36px;
@@ -61,6 +74,12 @@ body {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 50px;
+}
+
+#menu:hover{
+    cursor: pointer;
+    color: grey;
+    border: 1px solid grey;
 }
 
 #aboutSection{
@@ -110,6 +129,12 @@ input{
     border: 2px solid #ff9b24;
     border-radius: 8px;
     color: white;
+}
+
+#login:hover{
+    cursor: pointer;
+    background-color: #ff7500;
+    border: none;
 }
 
 #footer{
