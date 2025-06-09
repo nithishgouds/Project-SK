@@ -12,7 +12,7 @@ body {
 #navigationBar {
     position: sticky;
     top: 0;
-    margin-top: 25px;
+    margin-top: 3vh;
     display: flex;
     color: white;
     background-color: #009951;
@@ -21,12 +21,12 @@ body {
 
 #navigationItems{
     display: flex;
-    gap: 60px;
+    gap: 5vw;
     align-items: center;
 }
 
 #navigationBar a{
-    gap: 40px;
+    gap: 2vw;
     color: white;
     text-decoration: none;
     font-weight: 400;
@@ -39,18 +39,18 @@ body {
 #homeSection{
     display: flex;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 5vh;
 }
 
 #homeText{
-    margin-left: 150px;
+    margin-left: 12vw;
 }
 
 #order{
-    margin-left: 150px;
-    margin-top: 10px;
-    padding: 24px 36px;
-    border-radius: 20px;
+    margin-left: 12vw;
+    margin-top: 2vh;
+    padding: 2vw 2.5vw;
+    border-radius: 1.5vw;
     border: #009951;
     background: #009951;
     font-size: 16px;
@@ -65,15 +65,15 @@ body {
 }
 
 #menu{
-    margin-left: 20px;
-    padding: 24px 36px;
-    border-radius: 20px;
+    margin-left: 2.5vw;
+    padding: 2vw 2.5vw;
+    border-radius: 1.5vw;
     border: 1px solid white;
     background: #ff9b24;
     color: white;
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 50px;
+    margin-bottom: 8vh;
 }
 
 #menu:hover{
@@ -90,39 +90,39 @@ body {
 #imageText{
     display: flex;
     align-items: center;
-    gap: 100px;
-    padding-bottom: 150px;
+    gap: 10vw;
+    padding-bottom: 25vh;
 }
 
 #loginSection{
     background-color: white;
     display: grid;
     place-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 20vh;
 }
 
 #loginCard{
     display: grid;
     place-items: center;
     border: 2px solid #ff9b24;
-    padding: 50px 75px;
+    padding: 8vh 5vw;
     border-radius: 20px;
 }
 
 input{
-    width: 320px;
-    height: 40px;
+    width: 24vw;
+    height: 6vh;
     font-size: 24px;
-    margin-top: 20px;
+    margin-top: 3vh;
     font-weight: 400;
     border: 2px solid #ff9b24;
     border-radius: 8px;
 }
 
 #login{
-    margin-top: 30px;
-    width: 320px;
-    height: 40px;
+    margin-top: 5vh;
+    width: 24.5vw;
+    height: 7vh;
     font-size: 24px;
     font-weight: 400;
     background-color: #ff9b24;
@@ -139,8 +139,8 @@ input{
 
 #footer{
     background-color: #009951;
-    padding: 30px;
+    padding: 5vh;
     display: flex;
-    gap: 150px;
+    gap: 12vw;
     color: white;
 }
