@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+#homePage {
     margin: 0;
     padding: 0;
     background-color: #ff9b24;
@@ -109,7 +109,7 @@ body {
     border-radius: 20px;
 }
 
-input{
+#loginText{
     width: 24vw;
     height: 6vh;
     font-size: 24px;
