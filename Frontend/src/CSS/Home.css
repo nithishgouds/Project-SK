@@ -2,17 +2,21 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+body{
     margin: 0;
     padding: 0;
-    background-color: #ff9b24;
     font-family: 'Outfit', sans-serif;
+}
+.home-page{
+    background-color: #ff9b24;
+    margin: 0;
+    padding: 0;
+    padding-top: 3vh;
 }
 
 #navigationBar {
     position: sticky;
     top: 0;
-    margin-top: 3vh;
     display: flex;
     color: white;
     background-color: #009951;
@@ -109,7 +113,7 @@ body {
     border-radius: 20px;
 }
 
-input{
+.input-text{
     width: 24vw;
     height: 6vh;
     font-size: 24px;
