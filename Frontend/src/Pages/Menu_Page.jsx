@@ -60,7 +60,7 @@ const FoodDeliveryMenu=()=>{
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Navigation Bar */}
+      
       <nav className="bg-orange-400 text-white px-4 py-4 flex justify-between items-center">
         <h1 className="text-xl md:text-2xl font-bold tracking-wide">FOOD DELIVERY</h1>
         <div className="flex items-center space-x-4 md:space-x-8">
@@ -75,9 +75,9 @@ const FoodDeliveryMenu=()=>{
 
       <div className="container mx-auto px-4 py-6">
         <div className="flex flex-col lg:flex-row gap-6">
-          {/* Menu Section */}
+          
           <div className="flex-1">
-            {/* Filter Buttons */}
+            
             <div className="flex flex-wrap gap-3 mb-6">
               {['ALL', 'NON VEG', 'VEG'].map((filter) => (
                 <button
@@ -94,7 +94,7 @@ const FoodDeliveryMenu=()=>{
               ))}
             </div>
 
-            {/* Menu Items */}
+            
             <div className="space-y-4">
               {filteredItems.map((item) => (
                 <div
@@ -134,7 +134,7 @@ const FoodDeliveryMenu=()=>{
             </div>
           </div>
 
-          {/* Cart Section */}
+          
           <div className="w-full lg:w-80">
             <div className="bg-white rounded-lg border-2 border-orange-300 p-4 sticky top-4">
               <h2 className="text-xl font-bold text-center mb-4 text-gray-800">MY CART</h2>
