@@ -16,8 +16,8 @@ export default function Header(){
                     <h4 className="hover:text-[#ff9b24] transition-colors duration-200">
                         <a href="#footer">Contact</a>
                     </h4>
-                    <h4 className="hover:text-[#ff9b24] transition-colors duration-200">
-                        <a href="">Map</a>
+                    <h4 className="hover:text-[#ff9b24] transition-colors duration-200 ml-auto sm:ml-0">
+                        <Link to="/map">Map</Link>
                     </h4>
                     <h4 className="hover:text-[#ff9b24] transition-colors duration-200 ml-auto sm:ml-0">
                         <Link to="/admin">Admin</Link>
