@@ -1,4 +1,5 @@
 import '../CSS/Home.css'
+import { useNavigate } from 'react-router-dom';
 import image from '../assets/Images/2947549.png'
 import { LuUsers } from "react-icons/lu";
 import { FaInstagram } from "react-icons/fa";
@@ -8,6 +9,11 @@ import { FaGithub } from "react-icons/fa";
 function orderClick(){
     const loginCard = document.getElementById('loginCard');
     loginCard.scrollIntoView();
+}
+
+function loginClick(){
+    const navigate = useNavigate();
+    navigate('/menu');
 }
 
 function Home(){
@@ -58,7 +64,7 @@ function Home(){
 
                     <h2 style={{fontWeight: '400'}}>Sign in with your mobile number</h2>
                     <input type="text" placeholder='Enter' id="loginText"/>
-                    <button id="login">
+                    <button id="login" onClick={loginClick}>
                         Sign In
                     </button>
                 </section>
