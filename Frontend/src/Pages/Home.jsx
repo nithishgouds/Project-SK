@@ -1,4 +1,5 @@
 import '../CSS/Home.css'
+import { useNavigate } from 'react-router-dom';
 import image from '../assets/Images/2947549.png'
 import { LuUsers } from "react-icons/lu";
 import { FaInstagram } from "react-icons/fa";
@@ -10,9 +11,14 @@ function orderClick(){
     loginCard.scrollIntoView();
 }
 
+function loginClick(){
+    const navigate = useNavigate();
+    navigate('/menu');
+}
+
 function Home(){
     return(
-        <>
+        <section id ="homePage">
             <section id="navigationBar">
                 <h1 style={{marginLeft: '12vw', marginRight: '25vw', fontWeight: '500'}}>FOOD DELIVERY</h1>
                 <section id = "navigationItems">
@@ -57,8 +63,8 @@ function Home(){
                     <h2 style={{marginTop: '-2vh', fontWeight: '400'}}>Browse and Order</h2>
 
                     <h2 style={{fontWeight: '400'}}>Sign in with your mobile number</h2>
-                    <input type="text" placeholder='Enter'/>
-                    <button id="login">
+                    <input type="text" placeholder='Enter' id="loginText"/>
+                    <button id="login" onClick={loginClick}>
                         Sign In
                     </button>
                 </section>
@@ -85,7 +91,7 @@ function Home(){
                 </section>
             </section>
             
-        </>
+        </section>
     )
 }
 
